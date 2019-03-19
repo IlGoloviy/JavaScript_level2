@@ -1,0 +1,74 @@
+body {
+    background: url(img/fon.jpg) no-repeat;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #065d78;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0px 3px 29px 9px rgba(4,52,69,1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart-button {
+    border: 1px solid #9e9e9e;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.goods-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.goods-item {
+    background: #fff;
+    width: 200px;
+    height: 275px;
+    margin: 25px 15px 0;
+    padding: 15px;
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+}
+.goods-item > div {
+    background: #d2d2d2;
+    border: 1px dotted #9e9e9e;
+    height: 150px;
+}
+.goods-item > button {
+    border: 1px solid #9e9e9e;
+    border-radius: 20px;
+    padding: 5px 25px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 60px;
+}
+.basket-list {
+    display: none;
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    background: #065d78;
+    padding: 25px;
+    box-sizing: border-box;
+}
+.basket-item {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.basket-close {
+    display: none;
+    position: fixed;
+    top: 25%;
+    right: 25%;
+    background: #000;
+    color: red;
+    padding: 0 5px;
+    cursor: pointer;
+}
