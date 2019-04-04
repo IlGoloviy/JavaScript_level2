@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>eShop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div id="app" >
+    <header>
+      <search @btn-search="filterGoods"></search>
+      <button class="cart-button" @click="toggleCardVisibility">Корзина</button>
+      <basket v-if="isVisibleCard" @btn-close="toggleCardVisibility"></basket>
+    </header>
+    <main>
+      <goods-list 
+        :goods="filteredGoods" 
+        @add-to-basket-list="addToBasket"></goods-list>
+    </main>
+    <error v-if="urlError"></error>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <!-- <script src="script.js"></script> -->
+  <script src="./dist/build.js"></script>
+</body>
+</html>
